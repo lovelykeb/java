@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>리포트</title>
+    <style type="text/css">
+        .entity{
+            border: solid 1px #7E2828;
+            margin-bottom: 20px;
+        }
+        .header{
+            background-color: #7E2828;
+            color: white;
+        }
+        .column-header{
+            background-color: #E8E8E8;
+        }
+        td{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>내 스키마의 템플릿</h2>
+<table class="entity" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="6" class="header">회원 (member)</td>
+    </tr>
+    <tr class="column-header">
+        <td>논리명</td>
+        <td>물리명</td>
+        <td>도메인</td>
+        <td>데이터 타입</td>
+        <td>Not Null</td>
+        <td>설명</td>
+    </tr>
+    <tr>
+        <td>회원 번호(PK)</td>
+        <td>mbNo</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>Y</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>아이디</td>
+        <td>mbId2</td>
+        <td>N/A</td>
+        <td>VARCHAR2(20)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>비밀번호</td>
+        <td>mbPassword</td>
+        <td>N/A</td>
+        <td>VARCHAR2(20)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>이름</td>
+        <td>mbName</td>
+        <td>N/A</td>
+        <td>VARCHAR2(10)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>주민번호</td>
+        <td>mbNumber</td>
+        <td>N/A</td>
+        <td>VARCHAR2(13)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>핸드폰 번호</td>
+        <td>mbTel</td>
+        <td>N/A</td>
+        <td>VARCHAR2(11)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>주소</td>
+        <td>mbAddress</td>
+        <td>N/A</td>
+        <td>VARCHAR2(100)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>메일</td>
+        <td>mbMail</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>가입일</td>
+        <td>mbDate</td>
+        <td>N/A</td>
+        <td>DATE</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<table class="entity" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="6" class="header">동물 (animal)</td>
+    </tr>
+    <tr class="column-header">
+        <td>논리명</td>
+        <td>물리명</td>
+        <td>도메인</td>
+        <td>데이터 타입</td>
+        <td>Not Null</td>
+        <td>설명</td>
+    </tr>
+    <tr>
+        <td>등록 번호(PK)</td>
+        <td>aniNumber</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>Y</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>회원 번호(FK)</td>
+        <td>mbNo</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>RFID 번호</td>
+        <td>numRFID</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>이름</td>
+        <td>aniName</td>
+        <td>N/A</td>
+        <td>VARCHAR2(15)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>성별</td>
+        <td>aniGender</td>
+        <td>N/A</td>
+        <td>VARCHAR2(10)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>중성화</td>
+        <td>aniNeutralization</td>
+        <td>N/A</td>
+        <td>VARCHAR2(10)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>출생일</td>
+        <td>aniBirthday</td>
+        <td>N/A</td>
+        <td>DATE</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>품종</td>
+        <td>aniBreed</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>털색깔</td>
+        <td>aniColor</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>특이사항</td>
+        <td>aniNote</td>
+        <td>N/A</td>
+        <td>VARCHAR2(500)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>동물상태</td>
+        <td>aniState</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>등록일</td>
+        <td>aniDate</td>
+        <td>N/A</td>
+        <td>DATE</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<table class="entity" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="6" class="header">등록 병원 (hospital)</td>
+    </tr>
+    <tr class="column-header">
+        <td>논리명</td>
+        <td>물리명</td>
+        <td>도메인</td>
+        <td>데이터 타입</td>
+        <td>Not Null</td>
+        <td>설명</td>
+    </tr>
+    <tr>
+        <td>병원 코드(PK)</td>
+        <td>hospitalCode</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>Y</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>병원 이름</td>
+        <td>hospitalName</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>병원 번호</td>
+        <td>hospitalTel</td>
+        <td>N/A</td>
+        <td>VARCHAR2(15)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>지역</td>
+        <td>local</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>병원 주소</td>
+        <td>hospitalAddress</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>홈페이지</td>
+        <td>homePage</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>병원 메일</td>
+        <td>hospitalMail</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>병원 소개</td>
+        <td>hospitalIntroduce</td>
+        <td>N/A</td>
+        <td>VARCHAR2(500)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>등록 방식</td>
+        <td>registrationMethod</td>
+        <td>N/A</td>
+        <td>VARCHAR2(10)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>게시판 코드(FK)</td>
+        <td>code</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<table class="entity" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="6" class="header">보호소 (shelter)</td>
+    </tr>
+    <tr class="column-header">
+        <td>논리명</td>
+        <td>물리명</td>
+        <td>도메인</td>
+        <td>데이터 타입</td>
+        <td>Not Null</td>
+        <td>설명</td>
+    </tr>
+    <tr>
+        <td>보호소 코드(PK)</td>
+        <td>shelterCode</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>Y</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>지역</td>
+        <td>stlocal</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 이름</td>
+        <td>shelterName</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 번호</td>
+        <td>shelterTel</td>
+        <td>N/A</td>
+        <td>VARCHAR2(15)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 주소</td>
+        <td>shelterAddress</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 메일</td>
+        <td>shelterMail</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 홈페이지</td>
+        <td>sthomePage</td>
+        <td>N/A</td>
+        <td>VARCHAR2(50)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 소개</td>
+        <td>shelterIntroduce</td>
+        <td>N/A</td>
+        <td>VARCHAR2(500)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>보호소 설립일</td>
+        <td>shelterEstablishment</td>
+        <td>N/A</td>
+        <td>DATE</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>게시판 코드(FK)</td>
+        <td>code</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<table class="entity" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="6" class="header">게시판 (board)</td>
+    </tr>
+    <tr class="column-header">
+        <td>논리명</td>
+        <td>물리명</td>
+        <td>도메인</td>
+        <td>데이터 타입</td>
+        <td>Not Null</td>
+        <td>설명</td>
+    </tr>
+    <tr>
+        <td>게시판 코드(PK)</td>
+        <td>code</td>
+        <td>N/A</td>
+        <td>NUMBER</td>
+        <td>Y</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>게시판 이름</td>
+        <td>name</td>
+        <td>N/A</td>
+        <td>VARCHAR2(30)</td>
+        <td>N</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>
